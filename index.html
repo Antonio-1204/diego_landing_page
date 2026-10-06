@@ -1,0 +1,1519 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; media-src 'self'; font-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'none'"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Diego Productions · Wedding Photography &amp; Film</title>
+    <meta
+      name="description"
+      content="Diego Productions is a (fictional) wedding photography and film studio based in Miami. Love stories told in golden light. Book your date."
+    />
+    <meta name="theme-color" content="#FBF8F2" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/fonts/cormorant-garamond-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/pinyon-script-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="preload" href="assets/images/hero-desktop-poster.webp" as="image" media="(min-width: 768px)" />
+    <link rel="preload" href="assets/images/hero-mobile-poster.webp" as="image" media="(max-width: 767px)" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="icon-logo" viewBox="0 0 64 64">
+        <circle cx="32" cy="32" r="30" fill="none" stroke="currentColor" stroke-width="1.2" />
+        <circle cx="32" cy="32" r="26" fill="none" stroke="currentColor" stroke-width=".6" stroke-dasharray="1.5 2.5" />
+        <path
+          d="M24 18v28M24 18h6.5a13 14 0 0 1 0 28H24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z" fill="currentColor" /></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" />
+      </symbol>
+      <symbol id="icon-chevron-left" viewBox="0 0 24 24">
+        <path
+          d="M15 5l-7 7 7 7"
+          stroke="currentColor"
+          stroke-width="1.6"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-chevron-right" viewBox="0 0 24 24">
+        <path
+          d="M9 5l7 7-7 7"
+          stroke="currentColor"
+          stroke-width="1.6"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.2" />
+        <path
+          d="M7.5 12.5l3 3 6-7"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="icon-message" viewBox="0 0 32 32">
+        <path
+          d="M6 6h20a2.5 2.5 0 0 1 2.5 2.5v12A2.5 2.5 0 0 1 26 23H13l-6.5 5v-5H6a2.5 2.5 0 0 1-2.5-2.5v-12A2.5 2.5 0 0 1 6 6z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+        <circle cx="10.5" cy="14.5" r="1.5" fill="currentColor" />
+        <circle cx="16" cy="14.5" r="1.5" fill="currentColor" />
+        <circle cx="21.5" cy="14.5" r="1.5" fill="currentColor" />
+      </symbol>
+      <symbol id="icon-instagram" viewBox="0 0 24 24">
+        <rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.5" />
+        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5" />
+        <circle cx="17.3" cy="6.7" r="1" fill="currentColor" />
+      </symbol>
+      <symbol id="icon-tiktok" viewBox="0 0 24 24">
+        <path
+          d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.5 2.6 2.3 4.4 5 4.6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="icon-youtube" viewBox="0 0 24 24">
+        <rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="1.5" />
+        <path d="M10 9.3v5.4l4.6-2.7z" fill="currentColor" />
+      </symbol>
+      <symbol id="icon-pinterest" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5" />
+        <path
+          d="M11 20l1.6-7.5M12.3 8.2c2.7-.4 4.4 1.2 4 3.3-.4 2.4-2.8 3.3-4.3 2.2-.9-.6-.9-1.8-.6-3"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="icon-camera" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3">
+        <rect x="5" y="13" width="38" height="27" rx="3" />
+        <path d="M17 13l3-5h8l3 5" />
+        <circle cx="24" cy="26.5" r="8" />
+        <circle cx="24" cy="26.5" r="4" />
+      </symbol>
+      <symbol id="icon-heart" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3">
+        <path d="M24 41s-15-8.6-15-20a8 8 0 0 1 15-4 8 8 0 0 1 15 4c0 11.4-15 20-15 20z" />
+        <path d="M19 23l4 4 7-8" />
+      </symbol>
+      <symbol id="icon-video" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3">
+        <rect x="4" y="14" width="28" height="22" rx="3" />
+        <path d="M32 21l12-6v18l-12-6" />
+        <circle cx="12" cy="10" r="4" />
+        <circle cx="24" cy="10" r="4" />
+      </symbol>
+    </svg>
+
+    <header class="site-header" id="site-header">
+      <div class="container">
+        <a class="brand" href="#top" aria-label="Diego Productions, back to top">
+          <svg><use href="#icon-logo" /></svg>
+          <span class="brand-text">
+            <span class="brand-name">DIEGO</span>
+            <span class="brand-tagline">Productions · Film &amp; Photo</span>
+          </span>
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav aria-label="Main">
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#films">Films</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a class="btn btn-gold" href="#booking">Book your date</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-label="Introduction">
+        <div class="hero-stage">
+          <picture>
+            <source media="(max-width: 767px)" srcset="assets/images/hero-mobile-poster.webp" />
+            <img
+              class="hero-poster"
+              src="assets/images/hero-desktop-poster.webp"
+              alt=""
+              width="1920"
+              height="1080"
+              fetchpriority="high"
+            />
+          </picture>
+          <video
+            class="hero-video"
+            id="hero-video"
+            muted
+            playsinline
+            loop
+            preload="auto"
+            aria-hidden="true"
+            data-src-desktop="assets/video/hero-desktop.mp4"
+            data-src-mobile="assets/video/hero-mobile.mp4"
+          ></video>
+          <div class="hero-overlay"></div>
+          <div class="hero-frame"></div>
+
+          <div class="hero-content">
+            <div class="hero-slide" data-slide="0">
+              <span class="cursive">Diego Productions</span>
+              <h1>
+                Your love story,
+                <br />
+                <em>told in golden light</em>
+              </h1>
+              <p>Wedding photography and film for couples who want to relive their day, again and again.</p>
+              <div class="hero-actions">
+                <a href="#booking" class="btn btn-gold btn-lg btn-shine">Book your date</a>
+                <a href="#films" class="btn btn-ghost">Watch our films</a>
+              </div>
+            </div>
+            <div class="hero-slide" data-slide="1" data-hidden="true">
+              <p class="hero-quote">
+                Every glance, every vow,
+                <br />
+                every tear that slips away.
+                <small>We don't miss a thing</small>
+              </p>
+            </div>
+            <div class="hero-slide" data-slide="2" data-hidden="true">
+              <p class="hero-quote">
+                So that fifty years from now
+                <br />
+                it still gives you chills.
+              </p>
+              <div class="hero-actions">
+                <a href="#booking" class="btn btn-gold btn-lg btn-shine">Book your date</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-scroll-hint" id="hero-scroll-hint">
+            <div class="scroll-cue">
+              <span>Scroll</span>
+              <span class="scroll-cue-line"></span>
+            </div>
+          </div>
+          <div class="hero-progress" aria-hidden="true">
+            <span class="hero-progress-bar" id="hero-progress-bar"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro" id="about">
+        <div class="container intro-grid">
+          <div class="collage reveal">
+            <img
+              class="collage-main reveal-clip"
+              src="assets/images/portraits-01-thumb.webp"
+              alt="Bride and groom standing in a field at sunset"
+              width="481"
+              height="720"
+              loading="lazy"
+            />
+            <img
+              class="collage-inset reveal-clip delay-3"
+              src="assets/images/ceremony-08-thumb.webp"
+              alt="Two gold wedding rings on white fabric"
+              width="720"
+              height="480"
+              loading="lazy"
+            />
+          </div>
+          <div class="intro-text">
+            <span class="eyebrow reveal">Meet Diego Productions</span>
+            <h2 class="reveal delay-1">
+              We don't just take wedding photos.
+              <br />
+              <span class="accent">We keep how it felt.</span>
+            </h2>
+            <p class="reveal delay-2">
+              We're a small studio based in Miami that blends the eye of photojournalism with the warmth of cinema. We
+              arrive early, become part of your day and capture what really happens: the hug with your dad, the nervous
+              laugh before “I do”, the packed dance floor at 1 a.m.
+            </p>
+            <p class="reveal delay-3">
+              We take on a limited number of weddings each year, so every couple gets the time they deserve.
+            </p>
+            <div class="signature reveal delay-4">Lucía &amp; Joaquín</div>
+            <div class="stats reveal delay-4">
+              <div>
+                <strong data-count="320" data-suffix="+">0</strong>
+                <span>Love stories told</span>
+              </div>
+              <div>
+                <strong data-count="12">0</strong>
+                <span>Years behind the lens</span>
+              </div>
+              <div>
+                <strong data-count="6" data-suffix=" wks">0</strong>
+                <span>Gallery delivery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery" id="gallery">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow reveal">Collections</span>
+            <h2 class="reveal delay-1">
+              Moments that
+              <span class="accent">never happen twice</span>
+            </h2>
+            <p class="reveal delay-2">
+              Browse our collections by moment. Tap any photo to see it full screen and swipe through the story.
+            </p>
+          </div>
+          <div class="filters reveal" role="group" aria-label="Filter gallery">
+            <button type="button" class="filter" data-filter="all" aria-pressed="true">
+              All
+              <sup></sup>
+            </button>
+            <button type="button" class="filter" data-filter="getting-ready" aria-pressed="false">
+              Getting ready
+              <sup></sup>
+            </button>
+            <button type="button" class="filter" data-filter="ceremony" aria-pressed="false">
+              Ceremony
+              <sup></sup>
+            </button>
+            <button type="button" class="filter" data-filter="portraits" aria-pressed="false">
+              Portraits
+              <sup></sup>
+            </button>
+            <button type="button" class="filter" data-filter="reception" aria-pressed="false">
+              Reception
+              <sup></sup>
+            </button>
+          </div>
+          <div class="gallery-grid" id="gallery-grid">
+            <a
+              class="gallery-item reveal"
+              href="assets/images/ceremony-01.webp"
+              data-category="ceremony"
+              data-credit="Soulseeker - Creative Photography"
+            >
+              <img
+                src="assets/images/ceremony-01-thumb.webp"
+                alt="White floral arch and gold chairs lining the ceremony aisle"
+                width="720"
+                height="479"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Ceremony</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/portraits-01.webp"
+              data-category="portraits"
+              data-credit="Jakob Owens"
+            >
+              <img
+                src="assets/images/portraits-01-thumb.webp"
+                alt="Bride and groom standing in a field at sunset"
+                width="481"
+                height="720"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Portraits</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/getting-ready-01.webp"
+              data-category="getting-ready"
+              data-credit="Jens Lindner"
+            >
+              <img
+                src="assets/images/getting-ready-01-thumb.webp"
+                alt="Bride adjusting her dress before the ceremony"
+                width="720"
+                height="572"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Getting ready</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/reception-01.webp"
+              data-category="reception"
+              data-credit="Sarah Noltner"
+            >
+              <img
+                src="assets/images/reception-01-thumb.webp"
+                alt="Bride and groom dancing at the reception"
+                width="480"
+                height="720"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Reception</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/ceremony-02.webp"
+              data-category="ceremony"
+              data-credit="Jennifer Kalenberg"
+            >
+              <img
+                src="assets/images/ceremony-02-thumb.webp"
+                alt="Bride and groom at the altar under crystal chandeliers"
+                width="480"
+                height="720"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Ceremony</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/portraits-02.webp"
+              data-category="portraits"
+              data-credit="Victoria Priessnitz"
+            >
+              <img
+                src="assets/images/portraits-02-thumb.webp"
+                alt="Groom kissing the bride on the cheek"
+                width="720"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Portraits</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/getting-ready-02.webp"
+              data-category="getting-ready"
+              data-credit="Andres Molina"
+            >
+              <img
+                src="assets/images/getting-ready-02-thumb.webp"
+                alt="Bride looking out the window before the ceremony"
+                width="480"
+                height="720"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Getting ready</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/reception-02.webp"
+              data-category="reception"
+              data-credit="Kari Bjorn Photography"
+            >
+              <img
+                src="assets/images/reception-02-thumb.webp"
+                alt="Bride and groom laughing with their guests"
+                width="720"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Reception</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/ceremony-03.webp"
+              data-category="ceremony"
+              data-credit="Shardayyy Photography"
+            >
+              <img
+                src="assets/images/ceremony-03-thumb.webp"
+                alt="Ceremony aisle decorated with white and pink flowers"
+                width="720"
+                height="481"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Ceremony</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/portraits-03.webp"
+              data-category="portraits"
+              data-credit="Michael McAuliffe"
+            >
+              <img
+                src="assets/images/portraits-03-thumb.webp"
+                alt="Couple kissing under a wooden arch"
+                width="480"
+                height="720"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Portraits</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/getting-ready-03.webp"
+              data-category="getting-ready"
+              data-credit="Jennifer Kalenberg"
+            >
+              <img
+                src="assets/images/getting-ready-03-thumb.webp"
+                alt="Bridesmaids helping the bride with her shoes"
+                width="514"
+                height="720"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Getting ready</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/reception-03.webp"
+              data-category="reception"
+              data-credit="Jeppe Mønster"
+            >
+              <img
+                src="assets/images/reception-03-thumb.webp"
+                alt="First dance under the dance floor lights"
+                width="720"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Reception</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/ceremony-04.webp"
+              data-category="ceremony"
+              data-credit="Redd Francisco"
+            >
+              <img
+                src="assets/images/ceremony-04-thumb.webp"
+                alt="Outdoor ceremony among autumn trees"
+                width="480"
+                height="720"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Ceremony</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/portraits-04.webp"
+              data-category="portraits"
+              data-credit="Jakob Owens"
+            >
+              <img
+                src="assets/images/portraits-04-thumb.webp"
+                alt="Bride and groom walking through the garden"
+                width="720"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Portraits</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/getting-ready-04.webp"
+              data-category="getting-ready"
+              data-credit="Ben Atkins"
+            >
+              <img
+                src="assets/images/getting-ready-04-thumb.webp"
+                alt="Bride in front of the mirror in her gown"
+                width="576"
+                height="720"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Getting ready</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/reception-04.webp"
+              data-category="reception"
+              data-credit="Pedro Pulido"
+            >
+              <img
+                src="assets/images/reception-04-thumb.webp"
+                alt="Guests dancing joyfully at the party"
+                width="720"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Reception</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/ceremony-05.webp"
+              data-category="ceremony"
+              data-credit="AMISH THAKKAR"
+            >
+              <img
+                src="assets/images/ceremony-05-thumb.webp"
+                alt="Couple during a wedding ritual under a floral canopy"
+                width="720"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Ceremony</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/portraits-05.webp"
+              data-category="portraits"
+              data-credit="Kari Bjorn Photography"
+            >
+              <img
+                src="assets/images/portraits-05-thumb.webp"
+                alt="Couple embracing by a brick wall"
+                width="480"
+                height="720"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Portraits</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/getting-ready-05.webp"
+              data-category="getting-ready"
+              data-credit="Lori DeJong"
+            >
+              <img
+                src="assets/images/getting-ready-05-thumb.webp"
+                alt="Bride and bridesmaids in robes before getting dressed"
+                width="720"
+                height="491"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Getting ready</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/reception-05.webp"
+              data-category="reception"
+              data-credit="Rhamely"
+            >
+              <img
+                src="assets/images/reception-05-thumb.webp"
+                alt="Reception table set outdoors"
+                width="720"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Reception</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/ceremony-06.webp"
+              data-category="ceremony"
+              data-credit="Matthew Essman"
+            >
+              <img
+                src="assets/images/ceremony-06-thumb.webp"
+                alt="White chairs facing the lake, ready for the ceremony"
+                width="720"
+                height="479"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Ceremony</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/portraits-06.webp"
+              data-category="portraits"
+              data-credit="Negar Nikkhah"
+            >
+              <img
+                src="assets/images/portraits-06-thumb.webp"
+                alt="Elegant couple on a park bench"
+                width="480"
+                height="720"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Portraits</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/getting-ready-06.webp"
+              data-category="getting-ready"
+              data-credit="Duo Chen"
+            >
+              <img
+                src="assets/images/getting-ready-06-thumb.webp"
+                alt="Black and white portrait of the bride at the mirror"
+                width="480"
+                height="720"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Getting ready</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/reception-06.webp"
+              data-category="reception"
+              data-credit="Yaw Afari"
+            >
+              <img
+                src="assets/images/reception-06-thumb.webp"
+                alt="Couple dancing in the reception hall"
+                width="720"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Reception</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/ceremony-07.webp"
+              data-category="ceremony"
+              data-credit="fabio guntur"
+            >
+              <img
+                src="assets/images/ceremony-07-thumb.webp"
+                alt="Ceremony with a green carpet and white flower arches"
+                width="720"
+                height="540"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Ceremony</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/ceremony-08.webp"
+              data-category="ceremony"
+              data-credit="Paige Johnson"
+            >
+              <img
+                src="assets/images/ceremony-08-thumb.webp"
+                alt="Gold wedding rings on white fabric"
+                width="720"
+                height="480"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Ceremony</span>
+            </a>
+            <a
+              class="gallery-item reveal"
+              href="assets/images/ceremony-09.webp"
+              data-category="ceremony"
+              data-credit="Frames For Your Heart"
+            >
+              <img
+                src="assets/images/ceremony-09-thumb.webp"
+                alt="Wedding rings resting on a bouquet"
+                width="509"
+                height="720"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="gallery-item-label">Ceremony</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+        <div class="lightbox-stage" id="lightbox-stage">
+          <span class="lightbox-hint">Swipe or use the arrows</span>
+          <button type="button" class="lightbox-btn lightbox-prev" id="lightbox-prev" aria-label="Previous photo">
+            <svg><use href="#icon-chevron-left" /></svg>
+          </button>
+          <button type="button" class="lightbox-btn lightbox-next" id="lightbox-next" aria-label="Next photo">
+            <svg><use href="#icon-chevron-right" /></svg>
+          </button>
+          <button type="button" class="lightbox-btn lightbox-close" id="lightbox-close" aria-label="Close viewer">
+            <svg><use href="#icon-close" /></svg>
+          </button>
+          <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+      </div>
+
+      <section class="section films" id="films">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow reveal">Wedding films</span>
+            <h2 class="reveal delay-1">
+              Your day,
+              <span class="accent">like the movies</span>
+            </h2>
+            <p class="reveal delay-2">
+              Cinematic edits with licensed music, film-grade color and the rhythm of your story. Press play and feel
+              what our couples feel the first time they watch it.
+            </p>
+          </div>
+          <div class="films-grid">
+            <button
+              type="button"
+              class="film-card reveal"
+              data-src="assets/video/film-1.mp4"
+              data-title="Camila &amp; Rodrigo"
+              data-location="Intimate ceremony · Coral Gables, FL"
+            >
+              <img src="assets/images/film-1-poster.webp" alt="" width="1280" height="720" loading="lazy" />
+              <span class="film-play">
+                <svg><use href="#icon-play" /></svg>
+              </span>
+              <span class="film-meta">
+                <small class="film-kind">Featured film · 0:24</small>
+                <span class="film-title">Camila &amp; Rodrigo</span>
+                <span class="film-location">Intimate ceremony · Coral Gables, FL</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="film-card reveal delay-2"
+              data-src="assets/video/film-2.mp4"
+              data-title="Valeria &amp; Andrew"
+              data-location="Church wedding · St. Augustine, FL"
+            >
+              <img src="assets/images/film-2-poster.webp" alt="" width="1280" height="720" loading="lazy" />
+              <span class="film-play">
+                <svg><use href="#icon-play" /></svg>
+              </span>
+              <span class="film-meta">
+                <small class="film-kind">Trailer · 0:19</small>
+                <span class="film-title">Valeria &amp; Andrew</span>
+                <span class="film-location">Church wedding · St. Augustine, FL</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="film-card reveal delay-3"
+              data-src="assets/video/film-3.mp4"
+              data-title="Sophia &amp; Martin"
+              data-location="Garden at sunset · Napa Valley, CA"
+            >
+              <img src="assets/images/film-3-poster.webp" alt="" width="1280" height="720" loading="lazy" />
+              <span class="film-play">
+                <svg><use href="#icon-play" /></svg>
+              </span>
+              <span class="film-meta">
+                <small class="film-kind">Trailer · 0:13</small>
+                <span class="film-title">Sophia &amp; Martin</span>
+                <span class="film-location">Garden at sunset · Napa Valley, CA</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-label="Film player" hidden>
+        <button type="button" class="lightbox-btn lightbox-close" id="video-modal-close" aria-label="Close film">
+          <svg><use href="#icon-close" /></svg>
+        </button>
+        <div class="video-modal-box">
+          <video id="video-modal-player" controls playsinline preload="none"></video>
+          <p class="video-modal-title" id="video-modal-title"></p>
+        </div>
+      </div>
+
+      <section class="section packages" id="packages">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow reveal">Services &amp; packages</span>
+            <h2 class="reveal delay-1">
+              Choose how you want to
+              <span class="accent">remember it</span>
+            </h2>
+            <p class="reveal delay-2">
+              Three ways to work with us. Every package includes a planning call, a custom day-of timeline and delivery
+              through a private online gallery.
+            </p>
+          </div>
+          <div class="plans">
+            <article class="plan reveal">
+              <svg class="plan-icon"><use href="#icon-camera" /></svg>
+              <h3>Photography</h3>
+              <p class="plan-desc">For couples who want an album full of emotion and detail.</p>
+              <div class="plan-price">
+                <small>Starting at</small>
+                <strong>$3,200</strong>
+              </div>
+              <ul class="plan-features">
+                <li>Up to 10 hours of coverage</li>
+                <li>Lead photographer + second shooter</li>
+                <li>Complimentary engagement session</li>
+                <li>600+ edited high-resolution photos</li>
+                <li>30-photo sneak peek within 72 hours</li>
+                <li>Private online gallery for 2 years</li>
+              </ul>
+              <a href="#booking" class="btn btn-outline" data-service="Photography">Choose photography</a>
+            </article>
+            <article class="plan plan-featured reveal delay-2">
+              <span class="plan-badge">Most popular</span>
+              <svg class="plan-icon"><use href="#icon-heart" /></svg>
+              <h3>Photo + Film</h3>
+              <p class="plan-desc">The whole story: every image and every word, together.</p>
+              <div class="plan-price">
+                <small>Starting at</small>
+                <strong>$6,200</strong>
+              </div>
+              <ul class="plan-features">
+                <li>Everything in Photography</li>
+                <li>Everything in Film</li>
+                <li>3-person crew + drone</li>
+                <li>12 × 12 in fine art album</li>
+                <li>Social media teaser in 7 days</li>
+                <li>Save $800 vs. booking separately</li>
+              </ul>
+              <a href="#booking" class="btn btn-gold btn-shine" data-service="Photo + Film">Book the combo</a>
+            </article>
+            <article class="plan reveal delay-3">
+              <svg class="plan-icon"><use href="#icon-video" /></svg>
+              <h3>Film</h3>
+              <p class="plan-desc">To hear your vows again and watch yourselves dance.</p>
+              <div class="plan-price">
+                <small>Starting at</small>
+                <strong>$3,800</strong>
+              </div>
+              <ul class="plan-features">
+                <li>Up to 10 hours of filming</li>
+                <li>2 filmmakers with cinema cameras</li>
+                <li>8 to 12 minute wedding film</li>
+                <li>1-minute trailer in 4K</li>
+                <li>Vows and speeches audio</li>
+                <li>Digital delivery in 10 weeks</li>
+              </ul>
+              <a href="#booking" class="btn btn-outline" data-service="Film">Choose film</a>
+            </article>
+          </div>
+          <p class="pricing-note reveal">
+            Sample prices in US dollars for weddings in South Florida. Destination weddings are quoted on request.
+          </p>
+        </div>
+      </section>
+
+      <section class="section team" id="team">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow reveal">Our team</span>
+            <h2 class="reveal delay-1">
+              The people
+              <span class="accent">behind the lens</span>
+            </h2>
+            <p class="reveal delay-2">
+              A small, discreet and close-knit crew. It will feel like you invited a few friends who happen to know a
+              lot about light.
+            </p>
+          </div>
+          <div class="team-grid">
+            <article class="member reveal">
+              <div class="member-photo">
+                <img
+                  src="assets/images/team-01.webp"
+                  alt="Lucía Benavides holding her camera"
+                  width="533"
+                  height="800"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Lucía Benavides</h3>
+              <span class="member-role">Lead photographer</span>
+              <p>
+                A photojournalist by training, she has a sixth sense for the exact moment someone is about to cry happy
+                tears.
+              </p>
+            </article>
+            <article class="member reveal delay-2">
+              <div class="member-photo">
+                <img
+                  src="assets/images/team-02.webp"
+                  alt="Diego Ríos looking through his camera"
+                  width="800"
+                  height="800"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Diego Vargas</h3>
+              <span class="member-role">Founder · Creative director</span>
+              <p>
+                He started the studio after ten years of portrait work. He's the one who gets even the shyest groom to
+                relax in front of the camera.
+              </p>
+            </article>
+            <article class="member reveal delay-3">
+              <div class="member-photo">
+                <img
+                  src="assets/images/team-03.webp"
+                  alt="Joaquín Salas filming with a cinema camera"
+                  width="533"
+                  height="800"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Joaquín Salas</h3>
+              <span class="member-role">Film director · Videographer</span>
+              <p>
+                He comes from advertising and edits every film like a short movie: with a script, rhythm and plenty of
+                music.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process" id="process">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow reveal">How we work</span>
+            <h2 class="reveal delay-1">
+              From first hello
+              <span class="accent">to your album</span>
+            </h2>
+            <p class="reveal delay-2">A simple process with no surprises, so all you have to do is enjoy.</p>
+          </div>
+          <ol class="steps">
+            <li class="step reveal">
+              <div class="step-number">1</div>
+              <h3>Consultation</h3>
+              <p>Tell us your story over a video call or a coffee. We check availability and find the right package.</p>
+              <small>30 minutes</small>
+            </li>
+            <li class="step reveal delay-1">
+              <div class="step-number">2</div>
+              <h3>Booking</h3>
+              <p>We sign the contract, you secure your date with a 30% retainer, and we plan your timeline together.</p>
+              <small>Date secured</small>
+            </li>
+            <li class="step reveal delay-2">
+              <div class="step-number">3</div>
+              <h3>The big day</h3>
+              <p>
+                We arrive before everyone else and leave after the last dance. You don't have to worry about a thing.
+              </p>
+              <small>Up to 10 hours</small>
+            </li>
+            <li class="step reveal delay-4">
+              <div class="step-number">4</div>
+              <h3>Delivery</h3>
+              <p>Sneak peek in 72 hours, full gallery in 6 weeks and your film in 10. All in your private gallery.</p>
+              <small>Online &amp; album</small>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section reviews" id="reviews">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow reveal">Reviews</span>
+            <h2 class="reveal delay-1">
+              What our
+              <span class="accent">couples say</span>
+            </h2>
+            <span class="sample-notice reveal delay-2">★ Sample reviews · fictional brand</span>
+          </div>
+          <div class="reviews-list">
+            <figure class="review reveal">
+              <span class="sample-tag">Sample</span>
+              <div class="stars" role="img" aria-label="5 out of 5">★★★★★</div>
+              <blockquote>
+                “We watched the film on our one-month anniversary and both cried. They even caught my grandma winking at
+                me.”
+              </blockquote>
+              <figcaption>
+                <span class="review-initials">C·R</span>
+                <span>
+                  <b>Camila &amp; Rodrigo</b>
+                  Coral Gables wedding · illustrative text
+                </span>
+              </figcaption>
+            </figure>
+            <figure class="review reveal delay-2">
+              <span class="sample-tag">Sample</span>
+              <div class="stars" role="img" aria-label="5 out of 5">★★★★★</div>
+              <blockquote>
+                “So organized. The sneak peek arrived in two days and our families couldn't stop sharing it. They felt
+                like part of the guest list.”
+              </blockquote>
+              <figcaption>
+                <span class="review-initials">V·A</span>
+                <span>
+                  <b>Valeria &amp; Andrew</b>
+                  St. Augustine wedding · illustrative text
+                </span>
+              </figcaption>
+            </figure>
+            <figure class="review reveal delay-3">
+              <span class="sample-tag">Sample</span>
+              <div class="stars" role="img" aria-label="5 out of 5">★★★★★</div>
+              <blockquote>
+                “We were shy about posing and Diego made it so easy. Our sunset photos are already framed in the living
+                room.”
+              </blockquote>
+              <figcaption>
+                <span class="review-initials">S·M</span>
+                <span>
+                  <b>Sophia &amp; Martin</b>
+                  Napa Valley wedding · illustrative text
+                </span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow reveal">FAQ</span>
+            <h2 class="reveal delay-1">
+              Everything you
+              <span class="accent">want to know</span>
+            </h2>
+          </div>
+          <div class="faq-list reveal">
+            <details class="faq-item">
+              <summary>
+                How far in advance should we book?
+                <span class="faq-icon"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Ideally 9 to 12 months ahead, especially for Saturdays in spring and fall. If your wedding is sooner,
+                  reach out anyway: we sometimes have open dates.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                How do we secure our date?
+                <span class="faq-icon"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  With a signed contract and a 30% retainer. The balance is due 15 days before the wedding, by bank
+                  transfer or card.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                Do you travel for weddings?
+                <span class="faq-icon"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  We love to! We've worked across Florida, New York, California and Mexico. Travel costs (flights,
+                  lodging and meals) are quoted separately.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                When will we receive our photos and film?
+                <span class="faq-icon"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  A 30-photo sneak peek within 72 hours, the full gallery in about 6 weeks and your film in about 10
+                  weeks. The social media teaser arrives in 7 days.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                Can we choose the music for our film?
+                <span class="faq-icon"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Yes. Tell us the style you love and we'll pick licensed tracks together, so you can post your film on
+                  social media without it getting muted.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                What if it rains or our date changes?
+                <span class="faq-icon"></span>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  We always have a plan B for light and portraits. If you need to move your date, we transfer your
+                  retainer to a new day, subject to availability.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="container">
+          <span class="cursive reveal">2027 Season</span>
+          <h2 class="reveal delay-1">
+            The best dates
+            <em>go first</em>
+          </h2>
+          <p class="reveal delay-2">
+            We take a limited number of weddings each month. Check your date's availability today, no strings attached.
+          </p>
+          <a href="#booking" class="btn btn-gold btn-lg btn-shine reveal delay-3">Book your date</a>
+        </div>
+      </section>
+
+      <section class="section booking" id="booking">
+        <div class="container booking-grid">
+          <div class="booking-info">
+            <span class="eyebrow reveal">Book</span>
+            <h2 class="reveal delay-1">
+              Tell us about
+              <span class="accent">your big day</span>
+            </h2>
+            <p class="reveal delay-2">
+              Fill out the form in under a minute. We'll reply within 24 hours with availability and a proposal tailored
+              to you.
+            </p>
+            <ul class="perks reveal delay-3">
+              <li>
+                <svg><use href="#icon-check" /></svg>
+                <span>Reply within 24 hours</span>
+              </li>
+              <li>
+                <svg><use href="#icon-check" /></svg>
+                <span>No commitment: just check availability</span>
+              </li>
+              <li>
+                <svg><use href="#icon-check" /></svg>
+                <span>Free video call to get to know each other</span>
+              </li>
+              <li>
+                <svg><use href="#icon-check" /></svg>
+                <span>Prefer texting? Send us an SMS</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="booking-form reveal delay-2" id="booking-form" novalidate>
+            <h3>Check your date</h3>
+            <p>
+              Fields marked
+              <span class="required">*</span>
+              are required.
+            </p>
+            <div class="field-extra" aria-hidden="true">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+            <div class="fields">
+              <div class="field">
+                <label for="name">
+                  Your name
+                  <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  maxlength="60"
+                  autocomplete="given-name"
+                  required
+                  minlength="2"
+                  placeholder="e.g. Camila"
+                />
+                <span class="field-error" id="name-error">Please enter your name.</span>
+              </div>
+              <div class="field">
+                <label for="partner-name">
+                  Your partner's name
+                  <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input
+                  id="partner-name"
+                  name="partner-name"
+                  type="text"
+                  maxlength="60"
+                  required
+                  minlength="2"
+                  placeholder="e.g. Rodrigo"
+                />
+                <span class="field-error" id="partner-name-error">Please enter your partner's name.</span>
+              </div>
+              <div class="field">
+                <label for="wedding-date">
+                  Wedding date
+                  <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input id="wedding-date" name="wedding-date" type="date" required />
+                <span class="field-error" id="wedding-date-error">Please choose a future date.</span>
+              </div>
+              <div class="field">
+                <label for="venue">
+                  Venue / location
+                  <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input
+                  id="venue"
+                  name="venue"
+                  type="text"
+                  maxlength="120"
+                  required
+                  minlength="2"
+                  placeholder="City or venue"
+                />
+                <span class="field-error" id="venue-error">Let us know where it will be.</span>
+              </div>
+              <div class="field">
+                <label for="service">
+                  Service
+                  <span class="required" aria-hidden="true">*</span>
+                </label>
+                <select id="service" name="service" required>
+                  <option value="">Choose an option</option>
+                  <option>Photography</option>
+                  <option>Film</option>
+                  <option>Photo + Film</option>
+                  <option>Not sure yet</option>
+                </select>
+                <span class="field-error" id="service-error">Please choose a service.</span>
+              </div>
+              <div class="field">
+                <label for="guests">
+                  Guest count (approx.)
+                  <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input
+                  id="guests"
+                  name="guests"
+                  type="number"
+                  inputmode="numeric"
+                  min="2"
+                  max="2000"
+                  step="1"
+                  required
+                  placeholder="e.g. 150"
+                />
+                <span class="field-error" id="guests-error">Enter a number between 2 and 2,000.</span>
+              </div>
+              <div class="field">
+                <label for="email">
+                  Email
+                  <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  maxlength="120"
+                  autocomplete="email"
+                  required
+                  placeholder="you@example.com"
+                />
+                <span class="field-error" id="email-error">Please enter a valid email.</span>
+              </div>
+              <div class="field">
+                <label for="phone">
+                  Mobile phone
+                  <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  maxlength="20"
+                  autocomplete="tel"
+                  required
+                  pattern="\+?[0-9 \(\)\-\.]{7,20}"
+                  placeholder="+1 (305) 000-0000"
+                />
+                <span class="field-error" id="phone-error">Please enter a valid phone number (digits only).</span>
+              </div>
+              <div class="field field-full">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  maxlength="1200"
+                  placeholder="Tell us how you met and how you picture the day…"
+                ></textarea>
+                <span class="field-hint">Optional, but we love reading them.</span>
+              </div>
+            </div>
+            <p class="form-error" id="form-error" role="alert" hidden>
+              We couldn’t send your request. Please try again or text us.
+            </p>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-gold btn-lg" id="submit-btn">
+                <span class="spinner"></span>
+                <span class="btn-label">Book my date</span>
+              </button>
+              <small>We only use your details to reply to you.</small>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div class="confirm" id="confirm" role="dialog" aria-modal="true" aria-labelledby="confirm-title" hidden>
+      <div class="confirm-box">
+        <svg
+          class="confirm-seal"
+          viewBox="0 0 100 100"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle class="confirm-stroke" cx="50" cy="50" r="44" />
+          <path class="confirm-stroke" d="M50 72S28 60 28 44a11 11 0 0 1 22-5 11 11 0 0 1 22 5c0 16-22 28-22 28z" />
+        </svg>
+        <span class="cursive" id="confirm-names"></span>
+        <h3 id="confirm-title">Request received!</h3>
+        <p>Thank you for thinking of us. We'll check availability and get back to you within 24 hours.</p>
+        <dl class="confirm-summary" id="confirm-summary"></dl>
+        <button type="button" class="btn btn-gold" id="confirm-close">Back to the page</button>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="#top">
+              <svg><use href="#icon-logo" /></svg>
+              <span class="brand-text">
+                <span class="brand-name">DIEGO</span>
+                <span class="brand-tagline">Productions · Film &amp; Photo</span>
+              </span>
+            </a>
+            <p>Love stories told in golden light, from Miami to wherever you say “I do”.</p>
+            <div class="social">
+              <a href="#" aria-label="Instagram (sample)">
+                <svg><use href="#icon-instagram" /></svg>
+              </a>
+              <a href="#" aria-label="TikTok (sample)">
+                <svg><use href="#icon-tiktok" /></svg>
+              </a>
+              <a href="#" aria-label="YouTube (sample)">
+                <svg><use href="#icon-youtube" /></svg>
+              </a>
+              <a href="#" aria-label="Pinterest (sample)">
+                <svg><use href="#icon-pinterest" /></svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#films">Films</a></li>
+              <li><a href="#packages">Packages</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Studio</h4>
+            <ul>
+              <li><a href="#team">Our team</a></li>
+              <li><a href="#process">How we work</a></li>
+              <li><a href="#reviews">Reviews</a></li>
+              <li><a href="credits.html">Photo &amp; video credits</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact (sample)</h4>
+            <ul>
+              <li>123 Example Ave, Coral Gables, FL</li>
+              <li><a href="mailto:hello@diegoproductions.example">hello@diegoproductions.example</a></li>
+              <li><a href="tel:+13050000000">+1 (305) 000-0000</a></li>
+              <li>Mon–Sat · 9 a.m. – 7 p.m.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-base">
+          <span>
+            ©
+            <span id="year">2026</span>
+            Diego Productions · Fictional brand created for demo purposes.
+          </span>
+          <span>
+            Photos: Unsplash · Videos: Pexels · See
+            <a href="credits.html">credits</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      class="text-us"
+      id="text-us"
+      href="sms:+13050000000?&body=Hi%20Diego%20Productions%2C%20I%27d%20like%20to%20check%20availability%20for%20my%20wedding"
+      aria-label="Text us (sample number)"
+    >
+      <span class="text-us-label">Text us</span>
+      <span class="text-us-icon">
+        <svg><use href="#icon-message" /></svg>
+      </span>
+    </a>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
